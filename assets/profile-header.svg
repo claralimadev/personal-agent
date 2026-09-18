@@ -9,8 +9,15 @@
       <stop offset="0" stop-color="#fce300" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#fce300" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="road" cx="0.5" cy="1" r="0.9">
+      <stop offset="0" stop-color="#1a1700" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#1a1700" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="2" fill="#000" opacity="0.22"/>
+    </pattern>
+    <pattern id="hazard" width="28" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 0 40 L 28 0 L 42 0 L 14 40 Z" fill="#0a0a0f" opacity="0.18"/>
     </pattern>
     <filter id="bloom" x="-60%" y="-60%" width="220%" height="220%">
       <feGaussianBlur stdDeviation="10"/>
@@ -21,33 +28,20 @@
   <circle cx="640" cy="140" r="430" fill="url(#aura)"/>
 
   <g fill="#fce300" opacity="0.06">
-    <rect x="90"  y="246" width="3"  height="26"/>
-    <rect x="210" y="256" width="3"  height="16"/>
-    <rect x="340" y="240" width="3"  height="32"/>
-    <rect x="470" y="252" width="3"  height="20"/>
-    <rect x="590" y="244" width="3"  height="28"/>
-    <rect x="720" y="258" width="3"  height="14"/>
-    <rect x="850" y="248" width="3"  height="24"/>
-    <rect x="980" y="254" width="3"  height="18"/>
-    <rect x="1110" y="242" width="3"  height="30"/>
+    <rect x="90"  y="214" width="3"  height="26"/>
+    <rect x="210" y="224" width="3"  height="16"/>
+    <rect x="340" y="208" width="3"  height="32"/>
+    <rect x="470" y="220" width="3"  height="20"/>
+    <rect x="590" y="212" width="3"  height="28"/>
+    <rect x="720" y="226" width="3"  height="14"/>
+    <rect x="850" y="216" width="3"  height="24"/>
+    <rect x="980" y="222" width="3"  height="18"/>
+    <rect x="1110" y="210" width="3"  height="30"/>
   </g>
-
-  <g stroke="#fce300" fill="none" opacity="0.35">
-    <line x1="180" y1="360" x2="640" y2="274"/>
-    <line x1="300" y1="360" x2="640" y2="274"/>
-    <line x1="420" y1="360" x2="640" y2="274"/>
-    <line x1="540" y1="360" x2="640" y2="274"/>
-    <line x1="660" y1="360" x2="640" y2="274"/>
-    <line x1="780" y1="360" x2="640" y2="274"/>
-    <line x1="900" y1="360" x2="640" y2="274"/>
-    <line x1="1020" y1="360" x2="640" y2="274"/>
-    <line x1="1140" y1="360" x2="640" y2="274"/>
-  </g>
-  <g stroke="#fce300" fill="none" opacity="0.22">
-    <line x1="0"  y1="360" x2="1280" y2="360"/>
-    <line x1="0"  y1="328" x2="1280" y2="328"/>
-    <line x1="0"  y1="302" x2="1280" y2="302"/>
-    <line x1="0"  y1="285" x2="1280" y2="285"/>
+  <g fill="#00f0ff" opacity="0.05">
+    <rect x="150" y="218" width="3" height="22"/>
+    <rect x="600" y="204" width="3" height="36"/>
+    <rect x="880" y="230" width="3" height="10"/>
   </g>
 
   <text x="40" y="44" font-family="Courier New, monospace" font-size="14" fill="#00f0ff" opacity="0.85">RUN&gt; judy.exe --initialized</text>
@@ -57,7 +51,6 @@
     ● REC
   </text>
   <text x="616" y="52" font-family="Courier New, monospace" font-size="15" fill="#fce300" opacity="0.9">ジャヂィ</text>
-  <text x="40" y="330" font-family="Courier New, monospace" font-size="12" fill="#44485a">NIGHT CITY BRAINDANCE EDITOR DECK 2077</text>
 
   <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACgCAYAAACc/t08AAADe0lEQVR4nO3Y0Y3cIBRA0RBNNe7N1bg3t0MKSLQfWSRY3XMKeIIBa64YvzjKvO65ew1fGe8zVs6r7fd0tfM4fb81te9ttdPv8+nnW/v9fq8cBgDA+QQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACI+exeAAD/Nt5n7F7DV+Z1z5Pnnf77wU5eAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACI+exeAAA/03ifsXLevO558rzV+4WdvAACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAEPPZvQAA4PvG+4yV8+Z1z5PnnW71eazmBRAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAmM/uBQAA5xnvM1bOm9c9V85bbfV+T+cFEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAICYz7zuuXsRXxnvM3avAYC/+f+An8sLIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxY/XAed1z9Uz+33if5Wd8MvfvLKffP/flLKffF77n9O+tdv+8AAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGzxB7YbToxpRLLQAAAAAElFTkSuQmCC" x="392" y="106" width="480" height="120" image-rendering="pixelated" opacity="0.0">
     <animate attributeName="opacity" values="0;0.75;0;0.75;0;0.75" dur="3.2s" repeatCount="indefinite"/>
@@ -71,8 +64,35 @@
     <animate attributeName="opacity" values="0;0.5;0" dur="5.5s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="640" y="252" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
-  <text x="640" y="280" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO semaforo de relevancia evidencia &gt; opiniao</text>
+  <!-- pista -->
+  <rect x="0" y="262" width="1280" height="98" fill="url(#road)"/>
+  <g stroke="#fce300" fill="none" opacity="0.28">
+    <line x1="180" y1="360" x2="640" y2="264"/>
+    <line x1="300" y1="360" x2="640" y2="264"/>
+    <line x1="420" y1="360" x2="640" y2="264"/>
+    <line x1="540" y1="360" x2="640" y2="264"/>
+    <line x1="660" y1="360" x2="640" y2="264"/>
+    <line x1="780" y1="360" x2="640" y2="264"/>
+    <line x1="900" y1="360" x2="640" y2="264"/>
+    <line x1="1020" y1="360" x2="640" y2="264"/>
+    <line x1="1140" y1="360" x2="640" y2="264"/>
+  </g>
+  <g stroke="#fce300" fill="none" opacity="0.16">
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="330" x2="1280" y2="330"/>
+    <line x1="0" y1="304" x2="1280" y2="304"/>
+    <line x1="0" y1="286" x2="1280" y2="286"/>
+  </g>
+
+  <text x="640" y="232" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
+
+  <!-- faixa amarela (pista tecnologica) -->
+  <g>
+    <rect x="0" y="312" width="1280" height="48" fill="#fce300"/>
+    <rect x="0" y="312" width="1280" height="48" fill="url(#hazard)"/>
+    <rect x="0" y="312" width="1280" height="3" fill="#fce300" opacity="0.9"/>
+    <text x="640" y="342" text-anchor="middle" font-family="Courier New, monospace" font-size="17" font-weight="bold" letter-spacing="3" fill="#0a0a0f">DEV/PO · SEMÁFORO DE RELEVÂNCIA · EVIDÊNCIA &gt; OPINIÃO</text>
+  </g>
 
   <rect width="1280" height="360" fill="url(#scanlines)"/>
 </svg>
