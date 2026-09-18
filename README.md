@@ -81,3 +81,15 @@ MCP, RAG, banco vetorial, subagents, orchestrator, handoff automático, workflow
 ## Evals
 
 `evals/` registra: entrada, esperado, obtido, diferença, resultado e ajuste. 4 avaliações passando; EVAL 03 capturou falha real de metadados (corrigida) e EVAL 05 elevou o semáforo a formato obrigatório de saída (regra §7).
+
+## Opções de imagem (análise temporária)
+
+> Candidatas CC0/vibes cyberpunk para o README. Seção temporária, será removida na escolha.
+
+![Opção 1 — Cyberpunks (Explored)](assets/opcao1_cyberpunks.jpg)
+
+![Opção 2 — Cyberpunk Salon](assets/opcao2_salon.jpg)
+
+![Opção 3 — Cyberpunk Dys·to·pie 2K20](assets/opcao3_dys2k20.jpg)
+
+![Opção 4 — casal em cidade cyberpunk (DALL·E, CC0)](assets/opcao4_casal_city.jpg)
