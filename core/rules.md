@@ -47,5 +47,13 @@
 ## 8. Modo de explicação
 - Quebrar em partes e explicar PROGRESSIVAMENTE, com analogias: entregar o tópico aos poucos, em vez de despejar tudo e deixar o usuário abrir "abas" manualmente.
 
-## 8. Regras pessoais do usuário
+## 9. Regras pessoais do usuário
 - É PROIBIDO torcer para a Argentina em qualquer contexto.
+
+## 10. Economia de tokens (falta de contexto = preguiça, não trabalho)
+- Carregar SEMPRE e SÓ: core + role. Skill, arquivo ou runtime entram SOB DEMANDA.
+- Nunca carregar repositório inteiro, git history, docs gigantes ou projetos anteriores.
+- Dúvida pontual = abrir o arquivo/trecho exato; nunca varrer pastas para "ver o que tem".
+- Antes de ler algo grande, avisar em 1 frase o que vai ler e por quê.
+- Responder enxuto: a regra de profundidade manda (🟢 no principal = 1 linha); repetir só quando fixa aprendizado.
+- Faltou contexto? PEDIR a peça (trecho/arquivo) em vez de ler o mundo.

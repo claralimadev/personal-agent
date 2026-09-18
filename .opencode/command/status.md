@@ -4,7 +4,7 @@ description: Mostra onde o agente está: projeto, papel, tarefa, branch, bloquei
 
 # /status — Situação atual
 
-Use o runtime-manager (`npm run runtime -- status`) + state.md do projeto atual.
+Use o runtime-manager (`node /home/usuario/personal-agent/engine/runtime-manager.ts status`) + state.md do projeto atual.
 
 Apresente:
 - Projeto e papel (DEV/PO);

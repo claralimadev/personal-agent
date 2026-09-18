@@ -1,6 +1,6 @@
-# Agent v1 — DEV/PO pessoal
+# Judy — Agent v1 · DEV/PO pessoal
 
-Agente pessoal de desenvolvimento, reutilizável em vários projetos, com lente de produto (DEV/PO). Construído em modo mentor, peça por peça, no desafio #5.
+Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com lente de produto (DEV/PO). Nome escolhido por você: **Judy** (a editora de braindances de Night City — técnica, autêntica, leal). A persona foi temperada com a personalidade dela do jogo: craftsmanship, humor seco texano, papo reto e proteção total — sem quebrar as regras do agente (semáforo, evidência, VALIDAR, dois modos).
 
 - Continua sendo um agente de DEV: programa, debuga e revisa código.
 - A lente DEV/PO adiciona: problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência**.
@@ -27,15 +27,18 @@ Agente pessoal de desenvolvimento, reutilizável em vários projetos, com lente 
 npm run runtime -- start    # testar o robô direto
 ```
 
-Dentro do OpenCode, a partir desta pasta:
+Dentro do OpenCode:
 
-- `/start` — runtime primeiro, carrega core + role + gaveta do projeto, pergunta objetivo
+- `/judy` — invoca a Judy: runtime → core → role → gaveta do projeto → saudação → objetivo
+- `/start` — processo completo sem a saudação temática
 - `/resume` — retoma a tarefa salva no state
 - `/plan` — planeja sem codar (checa os campos DEV/PO)
 - `/debug` — caça bug por evidência
 - `/review` — revisa com a lente DEV/PO
 - `/status` — situação atual do projeto
 - `/eval` — roda uma avaliação de comportamento
+
+Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): funcionam em qualquer projeto — é só digitar `opencode` na pasta e chamar. Os originais vivem em `.opencode/command/`.
 
 ## Onde fica a memória
 
