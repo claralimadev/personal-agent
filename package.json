@@ -1,0 +1,8 @@
+{
+  "name": "personal-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "runtime": "node --experimental-strip-types engine/runtime-manager.ts"
+  }
+}
