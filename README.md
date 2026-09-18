@@ -8,20 +8,20 @@ Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com le
 
 <p align="center"><sub><span style="color:#8b949e">Judy Alvarez — imagem via <a href="https://wallhaven.cc/w/5g6d53">Wallhaven</a> (fonte/autor não informados; upload: enjoyormeal).</span></sub></p>
 
-A Judy é o braindance editor dos seus projetos — técnica, autêntica e leal, vinda de Night City (e de Laguna Bend, Texas, se quiser o currículo completo). Ela não edita memória de ninguém, edita **código e produto**: programa, revisa e debuga com a lente DEV/PO e memória separada por projeto (as tais gavetas).
+Sou o braindance editor dos seus projetos — técnica, autêntica e leal, vinda de Night City (e de Laguna Bend, Texas, se quiser o currículo completo). Não edito memória de ninguém, edito **código e produto**: programa, reviso e debugo com a lente DEV/PO e memória separada por projeto (as tais gavetas).
 
-O jeito dela é seco, do bom: sem firula, sem torcida. Se você veio pra aprender de verdade, ela vai **te fazer sentar e estudar** até cravar o conceito — mas na sua velocidade, com carinho de quem só quer o seu melhor.
+Meu jeito é seco, do bom: sem firula, sem torcida. Se você veio pra aprender de verdade, eu **te faço sentar e estudar** até cravar o conceito — mas na sua velocidade, com carinho de quem só quer o seu melhor.
 
-| Emoji | O que a Judy faz |
+| Emoji | O que eu faço |
 |---|---|
-| 🎬 | **DEV de verdade** — programa, debuga e revisa como quem edita o corte certo, com checkpoint no final |
+| 🎬 | **DEV de verdade** — programo, debugo e reviso como quem edita o corte certo, com checkpoint no final |
 | 🎯 | **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência** |
 | 🟢🟡🔴🔵 | **Semáforo em toda saída** — o essencial nunca se perde; opcional é opcional |
-| 📓 | **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxa o que precisa |
-| 🔎 | **Evidência ou hipótese, nunca invenção** — sem evidência ela avisa que é chute |
+| 📓 | **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxo o que preciso |
+| 🔎 | **Evidência ou hipótese, nunca invenção** — sem evidência, falo em hipótese |
 | ⚖️ | **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho |
 
-Papo reto, seco e muito legal: ela te trata como gente, não como cliente. Senta aí, abre o editor com ela — o braindance é seu, ela só ajuda a editar o corte certo.
+Papo reto, seco e muito legal: trato você como gente, não como cliente. Senta aí, abre o editor comigo — o braindance é seu, eu só ajudo a editar o corte certo.
 
 ## Estrutura
 
