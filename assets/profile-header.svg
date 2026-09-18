@@ -60,18 +60,23 @@
   <text x="640" y="228" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
   <text x="640" y="258" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
 
-  <!-- detalhe: grade amarela discreta no rodapé -->
-  <g stroke="#fce300" fill="none" opacity="0.3">
-    <line x1="340" y1="330" x2="640" y2="308"/>
-    <line x1="470" y1="330" x2="640" y2="308"/>
-    <line x1="568" y1="330" x2="640" y2="308"/>
-    <line x1="712" y1="330" x2="640" y2="308"/>
-    <line x1="810" y1="330" x2="640" y2="308"/>
-    <line x1="940" y1="330" x2="640" y2="308"/>
+  <!-- chão em perspectiva, horizonte subindo -->
+  <g stroke="#fce300" fill="none" opacity="0.4">
+    <line x1="220"  y1="360" x2="640" y2="272"/>
+    <line x1="340"  y1="360" x2="640" y2="272"/>
+    <line x1="460"  y1="360" x2="640" y2="272"/>
+    <line x1="565"  y1="360" x2="640" y2="272"/>
+    <line x1="715"  y1="360" x2="640" y2="272"/>
+    <line x1="820"  y1="360" x2="640" y2="272"/>
+    <line x1="940"  y1="360" x2="640" y2="272"/>
+    <line x1="1060" y1="360" x2="640" y2="272"/>
   </g>
-  <g stroke="#fce300" fill="none" opacity="0.18">
+  <g stroke="#fce300" fill="none" opacity="0.22">
+    <line x1="0" y1="360" x2="1280" y2="360"/>
     <line x1="0" y1="330" x2="1280" y2="330"/>
-    <line x1="0" y1="318" x2="1280" y2="318"/>
+    <line x1="0" y1="304" x2="1280" y2="304"/>
+    <line x1="0" y1="286" x2="1280" y2="286"/>
+    <line x1="0" y1="276" x2="1280" y2="276"/>
   </g>
 
   <rect width="1280" height="360" fill="url(#scanlines)"/>
