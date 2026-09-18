@@ -1,43 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="JUDY - a editora de braindances dos seus projetos">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="JUDY - a editora de braindances dos seus projetos">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0d12"/>
-      <stop offset="0.55" stop-color="#0f1016"/>
-      <stop offset="1" stop-color="#180725"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05010d"/>
+      <stop offset="0.55" stop-color="#0e0320"/>
+      <stop offset="1" stop-color="#1a0330"/>
     </linearGradient>
+
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffdd55"/>
+      <stop offset="0.45" stop-color="#ff2a6d"/>
+      <stop offset="1" stop-color="#b026ff"/>
+    </linearGradient>
+
     <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#00f0ff"/>
-      <stop offset="0.55" stop-color="#ff9e64"/>
+      <stop offset="0.5" stop-color="#ffe27a"/>
       <stop offset="1" stop-color="#ff2a6d"/>
     </linearGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
+
+    <radialGradient id="aura" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff2a6d" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff2a6d" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.28"/>
+    </pattern>
+
+    <pattern id="sunstripes" width="4" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+      <rect width="4" height="3" fill="#05010d" opacity="0.55"/>
+    </pattern>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
+        <feMergeNode in="blur"/>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
 
-  <rect width="1280" height="320" fill="url(#bg)"/>
+  <!-- fundo -->
+  <rect width="1280" height="360" fill="url(#sky)"/>
 
-  <g stroke="#00f0ff" stroke-width="1" opacity="0.12">
-    <line x1="0" y1="80"  x2="1280" y2="80"/>
-    <line x1="0" y1="160" x2="1280" y2="160"/>
-    <line x1="0" y1="240" x2="1280" y2="240"/>
-    <line x1="160" y1="0"  x2="160" y2="320"/>
-    <line x1="320" y1="0"  x2="320" y2="320"/>
-    <line x1="480" y1="0"  x2="480" y2="320"/>
-    <line x1="640" y1="0"  x2="640" y2="320"/>
-    <line x1="800" y1="0"  x2="800" y2="320"/>
-    <line x1="960" y1="0"  x2="960" y2="320"/>
-    <line x1="1120" y1="0" x2="1120" y2="320"/>
+  <!-- estrelas -->
+  <g fill="#c8d0dc">
+    <circle cx="120" cy="40"  r="1.2" opacity="0.7"/>
+    <circle cx="350" cy="70"  r="1"   opacity="0.5"/>
+    <circle cx="520" cy="28"  r="1.4" opacity="0.8"/>
+    <circle cx="760" cy="55"  r="1"   opacity="0.5"/>
+    <circle cx="930" cy="30"  r="1.3" opacity="0.7"/>
+    <circle cx="1130" cy="60" r="1"   opacity="0.5"/>
+    <circle cx="230" cy="95"  r="0.8" opacity="0.4"/>
+    <circle cx="1020" cy="88" r="0.8" opacity="0.4"/>
   </g>
 
-  <circle cx="1120" cy="56"  r="90"   fill="#ff2a6d" opacity="0.18" filter="url(#glow)"/>
-  <circle cx="180"  cy="270" r="120"  fill="#00f0ff" opacity="0.15" filter="url(#glow)"/>
+  <!-- aura de fundo -->
+  <circle cx="640" cy="150" r="420" fill="url(#aura)"/>
 
-  <text x="640" y="175" text-anchor="middle" font-family="Courier New, monospace" font-size="128" font-weight="bold" fill="url(#text)" filter="url(#glow)">JUDY</text>
-  <text x="640" y="235" text-anchor="middle" font-family="Courier New, monospace" font-size="26" fill="#c8d0dc">a editora de braindances dos seus projetos</text>
-  <text x="640" y="280" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#8b949e">DEV/PO · semáforo de relevância · evidência > opinião</text>
+  <!-- sol retrô-synthwave -->
+  <g>
+    <path d="M 320 270 A 320 320 0 0 1 960 270 Z" fill="url(#sun)" opacity="0.5"/>
+    <path d="M 320 270 A 320 320 0 0 1 960 270 Z" fill="url(#sunstripes)"/>
+  </g>
+
+  <!-- chão: grade neon em perspectiva -->
+  <g stroke="#ff2a6d" fill="none" opacity="0.55">
+    <line x1="180" y1="360" x2="640" y2="272"/>
+    <line x1="300" y1="360" x2="640" y2="272"/>
+    <line x1="420" y1="360" x2="640" y2="272"/>
+    <line x1="540" y1="360" x2="640" y2="272"/>
+    <line x1="660" y1="360" x2="640" y2="272"/>
+    <line x1="780" y1="360" x2="640" y2="272"/>
+    <line x1="900" y1="360" x2="640" y2="272"/>
+    <line x1="1020" y1="360" x2="640" y2="272"/>
+    <line x1="1140" y1="360" x2="640" y2="272"/>
+  </g>
+  <g stroke="#00f0ff" fill="none" opacity="0.4">
+    <line x1="0"  y1="360" x2="1280" y2="360"/>
+    <line x1="0"  y1="326" x2="1280" y2="326"/>
+    <line x1="0"  y1="300" x2="1280" y2="300"/>
+    <line x1="0"  y1="282" x2="1280" y2="282"/>
+  </g>
+
+  <!-- contadores de execução (HUD) -->
+  <text x="40" y="40"  font-family="Courier New, monospace" font-size="14" fill="#00f0ff" opacity="0.8">RUN&gt; judy.exe --initialized</text>
+  <text x="40" y="62"  font-family="Courier New, monospace" font-size="14" fill="#8b949e" opacity="0.8">memoria: gavetas ok · evidencia: ok · semaforo: 4/4</text>
+  <text x="1180" y="40" font-family="Courier New, monospace" font-size="14" fill="#ff2a6d" opacity="0.9">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.4s" repeatCount="indefinite"/>
+    ● REC
+  </text>
+  <text x="604" y="56" font-family="Courier New, monospace" font-size="16" fill="#b026ff" opacity="0.9">ジャディ</text>
+
+  <!-- texto glitch: canal vermelho / ciano -->
+  <g font-family="Courier New, monospace" font-size="120" font-weight="bold" text-anchor="middle">
+    <text x="637" y="180" fill="#ff2a6d" opacity="0.85">
+      <animate attributeName="opacity" values="0;0.85;0;0.85;0;0.85" dur="3.2s" repeatCount="indefinite"/>
+      JUDY
+    </text>
+    <text x="643" y="180" fill="#00f0ff" opacity="0.85">
+      JUDY
+    </text>
+    <text x="640" y="180" fill="url(#text)" filter="url(#glow)">JUDY</text>
+  </g>
+
+  <!-- barra de glitch -->
+  <rect x="0" y="150" width="1280" height="5" fill="#00f0ff" opacity="0.5">
+    <animate attributeName="x" values="-400;1280" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- tagline -->
+  <text x="640" y="232" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
+  <text x="640" y="262" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
+
+  <!-- CRT scanlines -->
+  <rect width="1280" height="360" fill="url(#scanlines)"/>
 </svg>
