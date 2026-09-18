@@ -16,7 +16,9 @@ Meu jeito é seco, do bom: sem firula, sem torcida. Se você veio pra aprender d
 |---|---|
 | 🎬 | **DEV de verdade** — programo, debugo e reviso como quem edita o corte certo, com checkpoint no final |
 | 🎯 | **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência** |
-| 🟢🟡🔴🔵 | **Semáforo em toda saída** — o essencial nunca se perde; opcional é opcional |
+| 🟢🟡🔴🔵 | **Semáforo em toda saída** — cada ponto da explicação marca sua relevância; o essencial nunca se perde, opcional é opcional |
+
+> Legenda do semáforo: 🟢 **baixa** (leitura opcional) · 🟡 **média** (vale ler com calma) · 🔴 **alta** (ler com atenção) · 🔵 **máxima** (pré-requisito, não se avança sem entender).
 | 📓 | **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxo o que preciso |
 | 🔎 | **Evidência ou hipótese, nunca invenção** — sem evidência, falo em hipótese |
 | ⚖️ | **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho |
