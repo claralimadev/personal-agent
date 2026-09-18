@@ -1,119 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="JUDY - a editora de braindances dos seus projetos">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#05010d"/>
-      <stop offset="0.55" stop-color="#0e0320"/>
-      <stop offset="1" stop-color="#1a0330"/>
-    </linearGradient>
-
-    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ffdd55"/>
-      <stop offset="0.45" stop-color="#ff2a6d"/>
-      <stop offset="1" stop-color="#b026ff"/>
+      <stop offset="0" stop-color="#030305"/>
+      <stop offset="0.5" stop-color="#07070c"/>
+      <stop offset="1" stop-color="#0c0c14"/>
     </linearGradient>
 
     <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f0ff"/>
-      <stop offset="0.5" stop-color="#ffe27a"/>
-      <stop offset="1" stop-color="#ff2a6d"/>
+      <stop offset="0" stop-color="#fce300"/>
+      <stop offset="0.5" stop-color="#ffe75a"/>
+      <stop offset="1" stop-color="#fce300"/>
     </linearGradient>
 
     <radialGradient id="aura" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ff2a6d" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#ff2a6d" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fce300" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#fce300" stop-opacity="0"/>
     </radialGradient>
 
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="2" fill="#000" opacity="0.28"/>
-    </pattern>
-
-    <pattern id="sunstripes" width="4" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
-      <rect width="4" height="3" fill="#05010d" opacity="0.55"/>
+      <rect width="4" height="2" fill="#000" opacity="0.22"/>
     </pattern>
 
     <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feGaussianBlur stdDeviation="7" result="blur"/>
       <feMerge>
-        <feMergeNode in="blur"/>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
   </defs>
 
-  <!-- fundo -->
+  <!-- fundo noturno -->
   <rect width="1280" height="360" fill="url(#sky)"/>
+  <circle cx="640" cy="120" r="420" fill="url(#aura)"/>
 
-  <!-- estrelas -->
-  <g fill="#c8d0dc">
-    <circle cx="120" cy="40"  r="1.2" opacity="0.7"/>
-    <circle cx="350" cy="70"  r="1"   opacity="0.5"/>
-    <circle cx="520" cy="28"  r="1.4" opacity="0.8"/>
-    <circle cx="760" cy="55"  r="1"   opacity="0.5"/>
-    <circle cx="930" cy="30"  r="1.3" opacity="0.7"/>
-    <circle cx="1130" cy="60" r="1"   opacity="0.5"/>
-    <circle cx="230" cy="95"  r="0.8" opacity="0.4"/>
-    <circle cx="1020" cy="88" r="0.8" opacity="0.4"/>
+  <!-- neon da cidade ao fundo (linha do horizonte) -->
+  <g stroke="#1b1e2a" fill="none">
+    <line x1="0" y1="272" x2="1280" y2="272"/>
   </g>
-
-  <!-- aura de fundo -->
-  <circle cx="640" cy="150" r="420" fill="url(#aura)"/>
-
-  <!-- sol retrô-synthwave -->
-  <g>
-    <path d="M 320 270 A 320 320 0 0 1 960 270 Z" fill="url(#sun)" opacity="0.5"/>
-    <path d="M 320 270 A 320 320 0 0 1 960 270 Z" fill="url(#sunstripes)"/>
+  <g fill="#fce300" opacity="0.06">
+    <rect x="90"  y="246" width="3"  height="26"/>
+    <rect x="210" y="256" width="3"  height="16"/>
+    <rect x="340" y="240" width="3"  height="32"/>
+    <rect x="470" y="252" width="3"  height="20"/>
+    <rect x="590" y="244" width="3"  height="28"/>
+    <rect x="720" y="258" width="3"  height="14"/>
+    <rect x="850" y="248" width="3"  height="24"/>
+    <rect x="980" y="254" width="3"  height="18"/>
+    <rect x="1110" y="242" width="3"  height="30"/>
+  </g>
+  <g fill="#00f0ff" opacity="0.05">
+    <rect x="150" y="250" width="3"  height="22"/>
+    <rect x="600" y="236" width="3"  height="36"/>
+    <rect x="880" y="262" width="3"  height="10"/>
   </g>
 
   <!-- chão: grade neon em perspectiva -->
-  <g stroke="#ff2a6d" fill="none" opacity="0.55">
-    <line x1="180" y1="360" x2="640" y2="272"/>
-    <line x1="300" y1="360" x2="640" y2="272"/>
-    <line x1="420" y1="360" x2="640" y2="272"/>
-    <line x1="540" y1="360" x2="640" y2="272"/>
-    <line x1="660" y1="360" x2="640" y2="272"/>
-    <line x1="780" y1="360" x2="640" y2="272"/>
-    <line x1="900" y1="360" x2="640" y2="272"/>
-    <line x1="1020" y1="360" x2="640" y2="272"/>
-    <line x1="1140" y1="360" x2="640" y2="272"/>
+  <g stroke="#fce300" fill="none" opacity="0.35">
+    <line x1="180" y1="360" x2="640" y2="274"/>
+    <line x1="300" y1="360" x2="640" y2="274"/>
+    <line x1="420" y1="360" x2="640" y2="274"/>
+    <line x1="540" y1="360" x2="640" y2="274"/>
+    <line x1="660" y1="360" x2="640" y2="274"/>
+    <line x1="780" y1="360" x2="640" y2="274"/>
+    <line x1="900" y1="360" x2="640" y2="274"/>
+    <line x1="1020" y1="360" x2="640" y2="274"/>
+    <line x1="1140" y1="360" x2="640" y2="274"/>
   </g>
-  <g stroke="#00f0ff" fill="none" opacity="0.4">
+  <g stroke="#fce300" fill="none" opacity="0.22">
     <line x1="0"  y1="360" x2="1280" y2="360"/>
-    <line x1="0"  y1="326" x2="1280" y2="326"/>
-    <line x1="0"  y1="300" x2="1280" y2="300"/>
-    <line x1="0"  y1="282" x2="1280" y2="282"/>
+    <line x1="0"  y1="328" x2="1280" y2="328"/>
+    <line x1="0"  y1="302" x2="1280" y2="302"/>
+    <line x1="0"  y1="285" x2="1280" y2="285"/>
   </g>
 
-  <!-- contadores de execução (HUD) -->
-  <text x="40" y="40"  font-family="Courier New, monospace" font-size="14" fill="#00f0ff" opacity="0.8">RUN&gt; judy.exe --initialized</text>
-  <text x="40" y="62"  font-family="Courier New, monospace" font-size="14" fill="#8b949e" opacity="0.8">memoria: gavetas ok · evidencia: ok · semaforo: 4/4</text>
-  <text x="1180" y="40" font-family="Courier New, monospace" font-size="14" fill="#ff2a6d" opacity="0.9">
+  <!-- HUD -->
+  <text x="40" y="44" font-family="Courier New, monospace" font-size="14" fill="#00f0ff" opacity="0.85">RUN&gt; judy.exe --initialized</text>
+  <text x="40" y="66" font-family="Courier New, monospace" font-size="14" fill="#8b949e" opacity="0.8">memoria: gavetas ok · evidencia: ok · semaforo: 4/4</text>
+  <text x="1176" y="44" font-family="Courier New, monospace" font-size="14" fill="#ff2a6d" opacity="0.9">
     <animate attributeName="opacity" values="0.2;1;0.2" dur="1.4s" repeatCount="indefinite"/>
     ● REC
   </text>
-  <text x="604" y="56" font-family="Courier New, monospace" font-size="16" fill="#b026ff" opacity="0.9">ジャディ</text>
+  <text x="616" y="52" font-family="Courier New, monospace" font-size="15" fill="#fce300" opacity="0.9">ジャディ</text>
+  <text x="40" y="330" font-family="Courier New, monospace" font-size="12" fill="#44485a">NIGHT CITY · BRAINDANCE EDITOR · DECK 2077</text>
 
   <!-- texto glitch: canal vermelho / ciano -->
-  <g font-family="Courier New, monospace" font-size="120" font-weight="bold" text-anchor="middle">
-    <text x="637" y="180" fill="#ff2a6d" opacity="0.85">
-      <animate attributeName="opacity" values="0;0.85;0;0.85;0;0.85" dur="3.2s" repeatCount="indefinite"/>
+  <g font-family="Courier New, monospace" font-size="118" font-weight="bold" text-anchor="middle">
+    <text x="637" y="182" fill="#ff2a6d" opacity="0.7">
+      <animate attributeName="opacity" values="0;0.7;0;0.7;0;0.7" dur="3.2s" repeatCount="indefinite"/>
       JUDY
     </text>
-    <text x="643" y="180" fill="#00f0ff" opacity="0.85">
+    <text x="643" y="182" fill="#00f0ff" opacity="0.7">
       JUDY
     </text>
-    <text x="640" y="180" fill="url(#text)" filter="url(#glow)">JUDY</text>
+    <text x="640" y="182" fill="url(#text)" filter="url(#glow)">JUDY</text>
   </g>
 
   <!-- barra de glitch -->
-  <rect x="0" y="150" width="1280" height="5" fill="#00f0ff" opacity="0.5">
+  <rect x="0" y="150" width="1280" height="4" fill="#fce300" opacity="0.4">
     <animate attributeName="x" values="-400;1280" dur="5.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.6;0" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="5.5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- tagline -->
-  <text x="640" y="232" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
-  <text x="640" y="262" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
+  <text x="640" y="234" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
+  <text x="640" y="263" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
 
   <!-- CRT scanlines -->
   <rect width="1280" height="360" fill="url(#scanlines)"/>

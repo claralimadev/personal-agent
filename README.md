@@ -28,7 +28,7 @@
 </p>
 
 <!-- ============================================================== 2. SOBRE A JUDY -->
-## Sobre a Judy 🌃
+## Sobre a Judy
 
 <p align="center">
   <img src="assets/judy.jpg" width="420" alt="Judy Alvarez" />
