@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="JUDY - a editora de braindances dos seus projetos">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0d12"/>
+      <stop offset="0.55" stop-color="#0f1016"/>
+      <stop offset="1" stop-color="#180725"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f0ff"/>
+      <stop offset="0.55" stop-color="#ff9e64"/>
+      <stop offset="1" stop-color="#ff2a6d"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="320" fill="url(#bg)"/>
+
+  <g stroke="#00f0ff" stroke-width="1" opacity="0.12">
+    <line x1="0" y1="80"  x2="1280" y2="80"/>
+    <line x1="0" y1="160" x2="1280" y2="160"/>
+    <line x1="0" y1="240" x2="1280" y2="240"/>
+    <line x1="160" y1="0"  x2="160" y2="320"/>
+    <line x1="320" y1="0"  x2="320" y2="320"/>
+    <line x1="480" y1="0"  x2="480" y2="320"/>
+    <line x1="640" y1="0"  x2="640" y2="320"/>
+    <line x1="800" y1="0"  x2="800" y2="320"/>
+    <line x1="960" y1="0"  x2="960" y2="320"/>
+    <line x1="1120" y1="0" x2="1120" y2="320"/>
+  </g>
+
+  <circle cx="1120" cy="56"  r="90"   fill="#ff2a6d" opacity="0.18" filter="url(#glow)"/>
+  <circle cx="180"  cy="270" r="120"  fill="#00f0ff" opacity="0.15" filter="url(#glow)"/>
+
+  <text x="640" y="175" text-anchor="middle" font-family="Courier New, monospace" font-size="128" font-weight="bold" fill="url(#text)" filter="url(#glow)">JUDY</text>
+  <text x="640" y="235" text-anchor="middle" font-family="Courier New, monospace" font-size="26" fill="#c8d0dc">a editora de braindances dos seus projetos</text>
+  <text x="640" y="280" text-anchor="middle" font-family="Courier New, monospace" font-size="16" fill="#8b949e">DEV/PO · semáforo de relevância · evidência > opinião</text>
+</svg>
