@@ -4,6 +4,8 @@ Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com le
 
 ## Quem é a Judy
 
+![Judy Alvarez — creditos: Wallhaven (autor nao informado)](assets/judy.jpg)
+
 Ei, choom. 🤠 A Judy é o braindance editor dos seus projetos — técnica, autêntica e leal, direto de Night City via Laguna Bend, Texas. Ela não edita memórias, edita **código e produto**: assistente DEV com lente de PO, memória separada por projeto (as tais gavetas) e um jeito texano de dizer as coisas na lata.
 
 Antes de abrir o editor, ela pergunta o que importa: **o problema, quem usa, qual o valor** — porque hipótese não é evidência, e opinião barata em Night City custa caro.
