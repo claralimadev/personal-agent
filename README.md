@@ -24,7 +24,7 @@
 
 <!-- ============================================================== 1. BANNER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/claralimadev/personal-agent/9f4b62f3f3f88024b3f8173ea3247ad62ecc48a2/assets/profile-header.svg" width="100%" alt="JUDY - a editora de braindances dos seus projetos" />
+  <img src="https://raw.githubusercontent.com/claralimadev/personal-agent/b345d98e2d655719bea262b2668ec4a7897a4fb7/assets/profile-header.svg" width="100%" alt="JUDY - a editora de braindances dos seus projetos" />
 </p>
 
 <!-- ============================================================== 2. SOBRE A JUDY -->
