@@ -9,10 +9,6 @@
       <stop offset="0" stop-color="#fce300" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#fce300" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="road" cx="0.5" cy="1" r="0.9">
-      <stop offset="0" stop-color="#1a1700" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#1a1700" stop-opacity="0"/>
-    </radialGradient>
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="2" fill="#000" opacity="0.22"/>
     </pattern>
@@ -63,23 +59,6 @@
 
   <text x="640" y="228" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
   <text x="640" y="258" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
-
-  <!-- pista: grade compacta la embaixo -->
-  <rect x="0" y="318" width="1280" height="42" fill="url(#road)"/>
-  <g stroke="#fce300" fill="none" opacity="0.4">
-    <line x1="220" y1="360" x2="640" y2="322"/>
-    <line x1="340" y1="360" x2="640" y2="322"/>
-    <line x1="460" y1="360" x2="640" y2="322"/>
-    <line x1="565" y1="360" x2="640" y2="322"/>
-    <line x1="715" y1="360" x2="640" y2="322"/>
-    <line x1="820" y1="360" x2="640" y2="322"/>
-    <line x1="940" y1="360" x2="640" y2="322"/>
-    <line x1="1060" y1="360" x2="640" y2="322"/>
-  </g>
-  <g stroke="#fce300" fill="none" opacity="0.2">
-    <line x1="0" y1="360" x2="1280" y2="360"/>
-    <line x1="0" y1="340" x2="1280" y2="340"/>
-  </g>
 
   <rect width="1280" height="360" fill="url(#scanlines)"/>
 </svg>
