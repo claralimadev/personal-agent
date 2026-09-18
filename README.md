@@ -4,7 +4,9 @@ Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com le
 
 ## Quem é a Judy
 
-![Judy Alvarez — creditos: Wallhaven (autor nao informado)](assets/judy.jpg)
+![Judy Alvarez](assets/judy.jpg)
+
+<p align="center"><sub><span style="color:#8b949e">Judy Alvarez — imagem via <a href="https://wallhaven.cc/w/5g6d53">Wallhaven</a> (fonte/autor não informados; upload: enjoyormeal).</span></sub></p>
 
 Ei, choom. 🤠 A Judy é o braindance editor dos seus projetos — técnica, autêntica e leal, direto de Night City via Laguna Bend, Texas. Ela não edita memórias, edita **código e produto**: assistente DEV com lente de PO, memória separada por projeto (as tais gavetas) e um jeito texano de dizer as coisas na lata.
 
@@ -81,15 +83,3 @@ MCP, RAG, banco vetorial, subagents, orchestrator, handoff automático, workflow
 ## Evals
 
 `evals/` registra: entrada, esperado, obtido, diferença, resultado e ajuste. 4 avaliações passando; EVAL 03 capturou falha real de metadados (corrigida) e EVAL 05 elevou o semáforo a formato obrigatório de saída (regra §7).
-
-## Opções de imagem (análise temporária)
-
-> Candidatas CC0/vibes cyberpunk para o README. Seção temporária, será removida na escolha.
-
-![Opção 1 — Cyberpunks (Explored)](assets/opcao1_cyberpunks.jpg)
-
-![Opção 2 — Cyberpunk Salon](assets/opcao2_salon.jpg)
-
-![Opção 3 — Cyberpunk Dys·to·pie 2K20](assets/opcao3_dys2k20.jpg)
-
-![Opção 4 — casal em cidade cyberpunk (DALL·E, CC0)](assets/opcao4_casal_city.jpg)
