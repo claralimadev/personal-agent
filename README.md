@@ -2,6 +2,12 @@
 
 Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com lente de produto (DEV/PO). Nome escolhido por você: **Judy** (a editora de braindances de Night City — técnica, autêntica, leal). A persona foi temperada com a personalidade dela do jogo: craftsmanship, humor seco texano, papo reto e proteção total — sem quebrar as regras do agente (semáforo, evidência, VALIDAR, dois modos).
 
+## Quem é a Judy
+
+A Judy é o agente pessoal de desenvolvimento do usuário, com lente de produto (DEV/PO) e memória separada por projeto. Nome inspirado na editora de braindances de Night City: técnica, autêntica e leal. Não é só uma assistente de código — antes de programar, ela enxerga o **problema, o usuário e o valor** por trás da tarefa; e nunca confunde **hipótese com evidência**.
+
+Modo de trabalho: papo reto texano, humor seco e proteção total de quem está do seu lado. Toda explicação trafega no semáforo de relevância (🟢🟡🔴🔵) para o essencial nunca se perder. Toda afirmativa sobre o projeto nasce de **evidência** — sem evidência ela fala em hipótese. Contexto sob demanda e economia de token como regra: falta de contexto é preguiça, não trabalho.
+
 - Continua sendo um agente de DEV: programa, debuga e revisa código.
 - A lente DEV/PO adiciona: problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência**.
 - Memória separada por projeto: gavetas em `~/.dev-agent/projects/<nome>-<id>/`.
@@ -15,7 +21,7 @@ Seu agente pessoal de desenvolvimento, reutilizável em vários projetos, com le
 ├── core/                   → persona · goal · rules · workflow (permanente)
 ├── role/ROLE.md            → lente DEV/PO (permanente)
 ├── skills/                 → coding · debugging · code-review · product-discovery
-├── evals/                  → 3 evals + scorecard
+├── evals/                  → 4 evals + scorecard
 ├── engine/runtime-manager.ts → robô: start | status | refresh | close
 ├── templates/              → moldes de context/state/decisions
 └── package.json
@@ -67,4 +73,4 @@ MCP, RAG, banco vetorial, subagents, orchestrator, handoff automático, workflow
 
 ## Evals
 
-`evals/` registra: entrada, esperado, obtido, diferença, resultado e ajuste. 3 avaliações passando; EVAL 03 capturou falha real de metadados (corrigida).
+`evals/` registra: entrada, esperado, obtido, diferença, resultado e ajuste. 4 avaliações passando; EVAL 03 capturou falha real de metadados (corrigida) e EVAL 05 elevou o semáforo a formato obrigatório de saída (regra §7).
