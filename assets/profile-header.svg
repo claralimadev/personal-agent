@@ -5,39 +5,21 @@
       <stop offset="0.5" stop-color="#07070c"/>
       <stop offset="1" stop-color="#0c0c14"/>
     </linearGradient>
-
-    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#fce300"/>
-      <stop offset="0.5" stop-color="#ffe75a"/>
-      <stop offset="1" stop-color="#fce300"/>
-    </linearGradient>
-
     <radialGradient id="aura" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="#fce300" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#fce300" stop-opacity="0"/>
     </radialGradient>
-
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
       <rect width="4" height="2" fill="#000" opacity="0.22"/>
     </pattern>
-
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="bloom" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10"/>
     </filter>
   </defs>
 
-  <!-- fundo noturno -->
   <rect width="1280" height="360" fill="url(#sky)"/>
-  <circle cx="640" cy="120" r="420" fill="url(#aura)"/>
+  <circle cx="640" cy="140" r="430" fill="url(#aura)"/>
 
-  <!-- neon da cidade ao fundo (linha do horizonte) -->
-  <g stroke="#1b1e2a" fill="none">
-    <line x1="0" y1="272" x2="1280" y2="272"/>
-  </g>
   <g fill="#fce300" opacity="0.06">
     <rect x="90"  y="246" width="3"  height="26"/>
     <rect x="210" y="256" width="3"  height="16"/>
@@ -49,13 +31,7 @@
     <rect x="980" y="254" width="3"  height="18"/>
     <rect x="1110" y="242" width="3"  height="30"/>
   </g>
-  <g fill="#00f0ff" opacity="0.05">
-    <rect x="150" y="250" width="3"  height="22"/>
-    <rect x="600" y="236" width="3"  height="36"/>
-    <rect x="880" y="262" width="3"  height="10"/>
-  </g>
 
-  <!-- chão: grade neon em perspectiva -->
   <g stroke="#fce300" fill="none" opacity="0.35">
     <line x1="180" y1="360" x2="640" y2="274"/>
     <line x1="300" y1="360" x2="640" y2="274"/>
@@ -74,38 +50,29 @@
     <line x1="0"  y1="285" x2="1280" y2="285"/>
   </g>
 
-  <!-- HUD -->
   <text x="40" y="44" font-family="Courier New, monospace" font-size="14" fill="#00f0ff" opacity="0.85">RUN&gt; judy.exe --initialized</text>
   <text x="40" y="66" font-family="Courier New, monospace" font-size="14" fill="#8b949e" opacity="0.8">memoria: gavetas ok · evidencia: ok · semaforo: 4/4</text>
   <text x="1176" y="44" font-family="Courier New, monospace" font-size="14" fill="#ff2a6d" opacity="0.9">
     <animate attributeName="opacity" values="0.2;1;0.2" dur="1.4s" repeatCount="indefinite"/>
     ● REC
   </text>
-  <text x="616" y="52" font-family="Courier New, monospace" font-size="15" fill="#fce300" opacity="0.9">ジャディ</text>
-  <text x="40" y="330" font-family="Courier New, monospace" font-size="12" fill="#44485a">NIGHT CITY · BRAINDANCE EDITOR · DECK 2077</text>
+  <text x="616" y="52" font-family="Courier New, monospace" font-size="15" fill="#fce300" opacity="0.9">ジャヂィ</text>
+  <text x="40" y="330" font-family="Courier New, monospace" font-size="12" fill="#44485a">NIGHT CITY BRAINDANCE EDITOR DECK 2077</text>
 
-  <!-- texto glitch: canal vermelho / ciano -->
-  <g font-family="Courier New, monospace" font-size="118" font-weight="bold" text-anchor="middle">
-    <text x="637" y="182" fill="#ff2a6d" opacity="0.7">
-      <animate attributeName="opacity" values="0;0.7;0;0.7;0;0.7" dur="3.2s" repeatCount="indefinite"/>
-      JUDY
-    </text>
-    <text x="643" y="182" fill="#00f0ff" opacity="0.7">
-      JUDY
-    </text>
-    <text x="640" y="182" fill="url(#text)" filter="url(#glow)">JUDY</text>
-  </g>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACgCAYAAACc/t08AAADe0lEQVR4nO3Y0Y3cIBRA0RBNNe7N1bg3t0MKSLQfWSRY3XMKeIIBa64YvzjKvO65ew1fGe8zVs6r7fd0tfM4fb81te9ttdPv8+nnW/v9fq8cBgDA+QQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACI+exeAAD/Nt5n7F7DV+Z1z5Pnnf77wU5eAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACI+exeAAA/03ifsXLevO558rzV+4WdvAACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAEPPZvQAA4PvG+4yV8+Z1z5PnnW71eazmBRAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAmM/uBQAA5xnvM1bOm9c9V85bbfV+T+cFEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAICYz7zuuXsRXxnvM3avAYC/+f+An8sLIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxY/XAed1z9Uz+33if5Wd8MvfvLKffP/flLKffF77n9O+tdv+8AAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGzxB7YbToxpRLLQAAAAAElFTkSuQmCC" x="392" y="106" width="480" height="120" image-rendering="pixelated" opacity="0.0">
+    <animate attributeName="opacity" values="0;0.75;0;0.75;0;0.75" dur="3.2s" repeatCount="indefinite"/>
+  </image>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACgCAYAAACc/t08AAADbUlEQVR4nO3Y0Y0cIRBAwcPaACb/KCcDnIB9HzYSfXpVAbRgYbRPrC9mefe+vYRvPWsdnVfb73S185i+35ra93ba9Ps8/Xxjv9+vk8MAAJhPAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgJjP7QUA8BfPWreX8K1379Hzpv9+cJEXQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiPrcXAMAP9ax1dN679+h5p/cLF3kBBACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACDmc3sBAMABz1pH5717j5433enzOMwLIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxn9sLAAAGetY6Ou/d++i8007vdzgvgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDEfL7evW8v4lvPWreXAMAf+P+AH8sLIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAx6/jEd+/jM/l3zzp/xpO5f7NMv3/uyyzT7wv/Z/r3Frt/XgABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACu+A3Uzjoznf3RuAAAAABJRU5ErkJggg==" x="408" y="106" width="480" height="120" image-rendering="pixelated" opacity="0.75"/>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACgCAYAAACc/t08AAADeUlEQVR4nO3Y0WnkMBRAUXlRG+6/MLdhcApImI+NwAr3nAIe0khmLjoGW7mv8by9hk/mOY6V82r73V3tPHbfb03te1tt9/u8+/nWfr9/K4cBALA/AQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGLm2wsA4GfzHMfba/jkvsaz87zdfz94kxdAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGLm2wsA4G+a5zhWzruv8ew8b/V+4U1eAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACImW8vAAD4vXmOY+W8+xrPzvN2t/o8VvMCCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAEDMfHsBAMB+5jmOlfPuazwr5622er+78wIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQMy8r/G8vYhP5jmOt9cAwHf+P+Dv8gIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQMyxeuB9jWf1TP7fPNef8c7cv73sfv/cl73sfl/4nd2/t9r98wIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwii+9kjpD8KYlWQAAAABJRU5ErkJggg==" x="400" y="106" width="480" height="120" image-rendering="pixelated"/>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAACgCAYAAACc/t08AAADeUlEQVR4nO3Y0WnkMBRAUXlRG+6/MLdhcApImI+NwAr3nAIe0khmLjoGW7mv8by9hk/mOY6V82r73V3tPHbfb03te1tt9/u8+/nWfr9/K4cBALA/AQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGLm2wsA4GfzHMfba/jkvsaz87zdfz94kxdAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGLm2wsA4G+a5zhWzruv8ew8b/V+4U1eAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACImW8vAAD4vXmOY+W8+xrPzvN2t/o8VvMCCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQIwABACIEYAAADECEAAgRgACAMQIQACAGAEIABAjAAEAYgQgAEDMfHsBAMB+5jmOlfPuazwr5622er+78wIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQMy8r/G8vYhP5jmOt9cAwHf+P+Dv8gIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAQMyxeuB9jWf1TP7fPNef8c7cv73sfv/cl73sfl/4nd2/t9r98wIIABAjAAEAYgQgAECMAAQAiBGAAAAxAhAAIEYAAgDECEAAgBgBCAAQIwABAGIEIABAjAAEAIgRgAAAMQIQACBGAAIAxAhAAIAYAQgAECMAAQBiBCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwii+9kjpD8KYlWQAAAABJRU5ErkJggg==" x="400" y="106" width="480" height="120" opacity="0.25" filter="url(#bloom)"/>
 
-  <!-- barra de glitch -->
   <rect x="0" y="150" width="1280" height="4" fill="#fce300" opacity="0.4">
     <animate attributeName="x" values="-400;1280" dur="5.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.5;0" dur="5.5s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- tagline -->
-  <text x="640" y="234" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
-  <text x="640" y="263" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
+  <text x="640" y="252" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
+  <text x="640" y="280" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO semaforo de relevancia evidencia &gt; opiniao</text>
 
-  <!-- CRT scanlines -->
   <rect width="1280" height="360" fill="url(#scanlines)"/>
 </svg>
