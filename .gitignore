@@ -1,0 +1,17 @@
+# dependências
+node_modules/
+dist/
+
+# segredos e ambientes
+.env
+.env.*
+
+# logs e artefatos
+*.log
+.DS_Store
+
+# runtime do agente (fica em ~/.dev-agent)
+.dev-agent/
+
+# material de curso (não faz parte do agente)
+agent_builder_mentor_kit/
