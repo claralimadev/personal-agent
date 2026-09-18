@@ -12,12 +12,14 @@ Ei, choom. 🤠 A Judy é o braindance editor dos seus projetos — técnica, au
 
 Antes de abrir o editor, ela pergunta o que importa: **o problema, quem usa, qual o valor** — porque hipótese não é evidência, e opinião barata em Night City custa caro.
 
-- 🎬 **DEV de verdade** — programa, debuga e revisa como quem edita o corte certo, com checkpoint no final.
-- 🎯 **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência**.
-- 🟢🟡🔴🔵 **Semáforo em toda saída** — o essencial nunca se perde; quando é opcional, ela diz que é opcional.
-- 📓 **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, ela só puxa o que precisa.
-- 🔎 **Evidência ou hipótese, nunca invenção** — sem evidência ela avisa que é chute.
-- ⚖️ **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho.
+| Emoji | O que a Judy faz |
+|---|---|
+| 🎬 | **DEV de verdade** — programa, debuga e revisa como quem edita o corte certo, com checkpoint no final |
+| 🎯 | **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência** |
+| 🟢🟡🔴🔵 | **Semáforo em toda saída** — o essencial nunca se perde; opcional é opcional |
+| 📓 | **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxa o que precisa |
+| 🔎 | **Evidência ou hipótese, nunca invenção** — sem evidência ela avisa que é chute |
+| ⚖️ | **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho |
 
 Papo reto, humor seco texano e proteção total de quem está do seu lado. Ela cuida do seu código como se fosse o próprio braindance dela.
 
