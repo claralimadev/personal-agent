@@ -60,5 +60,19 @@
   <text x="640" y="228" text-anchor="middle" font-family="Courier New, monospace" font-size="22" fill="#e6edf3">a editora de braindances dos seus projetos</text>
   <text x="640" y="258" text-anchor="middle" font-family="Courier New, monospace" font-size="15" fill="#8b949e">DEV/PO · semáforo de relevância · evidência &gt; opinião</text>
 
+  <!-- detalhe: grade amarela discreta no rodapé -->
+  <g stroke="#fce300" fill="none" opacity="0.3">
+    <line x1="340" y1="360" x2="640" y2="344"/>
+    <line x1="470" y1="360" x2="640" y2="344"/>
+    <line x1="568" y1="360" x2="640" y2="344"/>
+    <line x1="712" y1="360" x2="640" y2="344"/>
+    <line x1="810" y1="360" x2="640" y2="344"/>
+    <line x1="940" y1="360" x2="640" y2="344"/>
+  </g>
+  <g stroke="#fce300" fill="none" opacity="0.18">
+    <line x1="0" y1="360" x2="1280" y2="360"/>
+    <line x1="0" y1="352" x2="1280" y2="352"/>
+  </g>
+
   <rect width="1280" height="360" fill="url(#scanlines)"/>
 </svg>
