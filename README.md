@@ -47,21 +47,19 @@ Papo reto, seco e muito legal: trato você como gente, não como cliente. Senta 
 ---
 <!-- ============================================================== 3. O QUE EU FAÇO -->
 
-## O que eu faço 🎬
+## O que eu faço
 
-| Emoji | O que eu faço |
-|---|---|
-| 🎬 | **DEV de verdade** — programo, debugo e reviso como quem edita o corte certo, com checkpoint no final |
-| 🎯 | **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência** |
-| 🟢🟡🔴🔵 | **Semáforo em toda saída** — cada ponto da explicação marca sua relevância; o essencial nunca se perde, opcional é opcional |
-| 📓 | **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxo o que preciso |
-| 🔎 | **Evidência ou hipótese, nunca invenção** — sem evidência, falo em hipótese |
-| ⚖️ | **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho |
+- **DEV de verdade** — programo, debugo e reviso como quem edita o corte certo, com checkpoint no final
+- **Lente DEV/PO** — problema, usuário, valor, requisito, prioridade e **hipótese ≠ evidência**
+- **Semáforo em toda saída** (🟢🟡🔴🔵) — cada ponto da explicação marca sua relevância; o essencial nunca se perde, opcional é opcional
+- **Memória por projeto** — gavetas em `~/.dev-agent/projects/<nome>-<id>/`, só puxo o que preciso
+- **Evidência ou hipótese, nunca invenção** — sem evidência, falo em hipótese
+- **Economia de token** — contexto sob demanda; falta de contexto é preguiça, não trabalho
 
 ---
 <!-- ============================================================== 4. COMO USAR -->
 
-## Como usar 🚀
+## Como usar
 
 ```text
 npm run runtime -- start    # testar o robô direto
@@ -83,7 +81,7 @@ Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): f
 ---
 <!-- ============================================================== 5. ESTRUTURA -->
 
-## Estrutura 🗂️
+## Estrutura
 
 ```text
 ├── AGENTS.md                → instruções para agentes (como mexer no código)
@@ -103,7 +101,7 @@ Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): f
 ---
 <!-- ============================================================== 6. ONDE FICA A MEMÓRIA -->
 
-## Onde fica a memória 📓
+## Onde fica a memória
 
 ```text
 ~/.dev-agent/
@@ -120,7 +118,7 @@ O robô só reescreve o bloco `AUTO` (branch, stack, datas). Nunca sobrescreve d
 ---
 <!-- ============================================================== 7. REGRAS DE OURO -->
 
-## Regras de ouro ⚖️
+## Regras de ouro
 
 - `/start` → runtime-manager primeiro.
 - Contexto sob demanda: nunca carregar repositório inteiro, Git history ou projetos passados.
@@ -131,13 +129,13 @@ O robô só reescreve o bloco `AUTO` (branch, stack, datas). Nunca sobrescreve d
 ---
 <!-- ============================================================== 8. EVALS -->
 
-## Evals ✅
+## Evals
 
 `evals/` registra: entrada, esperado, obtido, diferença, resultado e ajuste. 4 avaliações passando; EVAL 03 capturou falha real de metadados (corrigida) e EVAL 05 elevou o semáforo a formato obrigatório de saída (regra §7).
 
 ---
 <!-- ============================================================== 9. EVOLUÇÃO FUTURA -->
 
-## Evolução futura 🧭
+## Evolução futura
 
 MCP, RAG, banco vetorial, subagents, orchestrator, handoff automático, workflow engine. Adicionar só quando o v1 provar o valor em uso real.
