@@ -69,7 +69,11 @@ const userFile = path.join(devAgentDir, "user.md");
 async function readUserName(): Promise<string | null> {
   try {
     const content = await readFile(userFile, "utf8");
-    return content.trim() ? content.trim() : null;
+    const firstName = content
+      .split("\n")
+      .map((l) => l.trim())
+      .find((l) => l && !l.startsWith("#"));
+    return firstName ?? null;
   } catch {
     return null;
   }
