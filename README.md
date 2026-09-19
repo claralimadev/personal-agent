@@ -88,6 +88,7 @@ Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): f
 ```text
 ├── AGENTS.md                → instruções para agentes (como mexer no código)
 ├── README.md
+├── LICENSE                  → MIT
 ├── .opencode/command/       → /judy /start /resume /plan /debug /review /status /eval
 ├── core/                    → persona · goal · rules · workflow (permanente)
 ├── role/ROLE.md             → lente DEV/PO (permanente)
