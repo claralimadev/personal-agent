@@ -86,15 +86,16 @@ Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): f
 ## Estrutura 🗂️
 
 ```text
-├── AGENTS.md
+├── AGENTS.md                → instruções para agentes (como mexer no código)
 ├── README.md
-├── .opencode/command/      → /start /resume /plan /debug /review /status /eval
-├── core/                   → persona · goal · rules · workflow (permanente)
-├── role/ROLE.md            → lente DEV/PO (permanente)
-├── skills/                 → coding · debugging · code-review · product-discovery
-├── evals/                  → 4 evals + scorecard
+├── .opencode/command/       → /judy /start /resume /plan /debug /review /status /eval
+├── core/                    → persona · goal · rules · workflow (permanente)
+├── role/ROLE.md             → lente DEV/PO (permanente)
+├── skills/                  → coding · debugging · code-review · product-discovery
+├── evals/                   → 4 evals + scorecard
+├── demo-faculdade.md        → roteiro de demo (apresentação)
 ├── engine/runtime-manager.ts → robô: start | status | refresh | close
-├── templates/              → moldes de context/state/decisions
+├── templates/               → moldes de context/state/decisions
 └── package.json
 ```
 
