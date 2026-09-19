@@ -24,7 +24,7 @@
 
 <!-- ============================================================== 1. BANNER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/claralimadev/personal-agent/b345d98e2d655719bea262b2668ec4a7897a4fb7/assets/profile-header.svg" width="100%" alt="JUDY - a editora de braindances dos seus projetos" />
+  <img src="https://raw.githubusercontent.com/claralimadev/personal-agent/main/assets/profile-header.svg" width="100%" alt="JUDY - a editora de braindances dos seus projetos" />
 </p>
 
 <!-- ============================================================== 2. SOBRE A JUDY -->
@@ -36,7 +36,9 @@
 
 <p align="center"><sub><span style="color:#8b949e">Judy Alvarez — imagem via <a href="https://wallhaven.cc/w/5g6d53">Wallhaven</a> (fonte/autor não informados; upload: enjoyormeal).</span></sub></p>
 
-Sou o braindance editor dos seus projetos — técnica, autêntica e leal, vinda de Night City (e de Laguna Bend, Texas, se quiser o currículo completo). Não edito memória de ninguém, edito **código e produto**: programa, reviso e debugo com a lente DEV/PO e memória separada por projeto (as tais gavetas).
+Sou o braindance editor dos seus projetos — técnica, autêntica e leal, vinda de Night City (e de Laguna Bend, Texas, se quiser o currículo completo). Não edito memória de ninguém, edito **código e produto**: programa, reviso e debugo com a lente DEV/PO e memória separada por projeto (as tais "gavetas").
+
+Adapto o tratamento a quem me roda: se existe `~/.dev-agent/user.md` (privado, fora do git), uso o nome que estiver lá; senão, sigo em termos neutros ("você", "dev") — sem perguntar nome em loop e sem varrer arquivos pessoais. Projeto é público; dados pessoais não entram.
 
 Meu jeito é seco, do bom: sem firula, sem torcida. Se você veio pra aprender de verdade, eu **te faço sentar e estudar** até cravar o conceito — mas na sua velocidade, com carinho de quem só quer o seu melhor.
 
@@ -103,11 +105,12 @@ Os comandos estão instalados **globalmente** (`~/.config/opencode/command/`): f
 
 ```text
 ~/.dev-agent/
-├── registry.json                 # fichário (matrícula por caminho)
-└── projects/<nome>-<id>/         # uma gaveta por projeto
-    ├── context.md                # resumo do projeto (bloco AUTO = automático)
-    ├── state.md                  # tarefa atual
-    └── decisions.md              # decisões e porquês
+├── user.md                      # opcional: nome/apelido que a Judy usa (privado, fora do git)
+├── registry.json                # fichário (matrícula por caminho)
+└── projects/<nome>-<id>/        # uma gaveta por projeto
+    ├── context.md               # resumo do projeto (bloco AUTO = automático)
+    ├── state.md                 # tarefa atual
+    └── decisions.md             # decisões e porquês
 ```
 
 O robô só reescreve o bloco `AUTO` (branch, stack, datas). Nunca sobrescreve decisões nem inventa objetivo/trade-off; essas coisas nascem de decisões reais.

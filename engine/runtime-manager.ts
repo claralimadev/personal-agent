@@ -63,6 +63,17 @@ const home = os.homedir();
 const devAgentDir = path.join(home, ".dev-agent");
 const registryFile = path.join(devAgentDir, "registry.json");
 const runtimeDir = path.join(devAgentDir, "projects", `${name}-${projectId}`);
+const userFile = path.join(devAgentDir, "user.md");
+
+// ---------- usuário ----------
+async function readUserName(): Promise<string | null> {
+  try {
+    const content = await readFile(userFile, "utf8");
+    return content.trim() ? content.trim() : null;
+  } catch {
+    return null;
+  }
+}
 
 // ---------- fichário ----------
 async function loadRegistry(): Promise<{ version: number; projects: Record<string, any> }> {
@@ -143,6 +154,7 @@ async function cmdStart(): Promise<void> {
         runtimeDir,
         isNew,
         branch: gitBranch(),
+        userName: await readUserName(),
       },
       null,
       2
@@ -162,6 +174,7 @@ async function cmdStatus(): Promise<void> {
         runtimeDir,
         branch: gitBranch(),
         lastUsedAt: entry?.lastUsedAt ?? null,
+        userName: await readUserName(),
       },
       null,
       2
